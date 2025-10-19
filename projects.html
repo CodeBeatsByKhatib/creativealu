@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>Creativealu</title>
+    <link rel="icon" type="image/x-icon" href="img/Fav-logo.png">
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-villa-agency.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+<!--
+
+TemplateMo 591 villa agency
+
+https://templatemo.com/tm-591-villa-agency
+
+-->
+  </head>
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <div class="sub-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-8">
+          <ul class="info">
+            <li><i class="fa fa-envelope"></i>sales@creativealu.com</li>
+            <li><i class="fa fa-map"></i>6th Circle, Amman - Jordan</li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-4">
+          <ul class="social-links">
+            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+   <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <!-- ***** Logo Start ***** -->
+                    <a href="index.html" class="logo">
+                        <h1>CREATIVEALU</h1>
+                    </a>
+                    <!-- ***** Logo End ***** -->
+                    <!-- ***** Menu Start ***** -->
+                    <ul class="nav">
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="aboutUs.html">About Us</a></li>
+                      <li><a href="ourSolutions.html">Our Solutions</a></li>
+                      <li><a href="projects.html" class="active">Projects</a></li>
+                      <li><a href="contact.html">Contact Us</a></li>
+                      <!-- <li><a href="index.html" class="btn btn-light border d-flex align-items-center gap-2 px-3 py-2"><div style="display: flex; align-items: center;"><img src="https://flagcdn.com/w40/gb.png" alt="UK Flag" width="20" height="14" style="display: block;"></div><span>EN</span></a></li> -->
+                      <li><a href="indexAr.html" class="btn btn-light border d-flex align-items-center gap-2 px-3 py-2"><div style="display: flex; align-items: center;"><img src="https://flagcdn.com/w40/sa.png" alt="KSA Flag" width="20" height="14" style="display: block;"></div><span>العربية</span></a></li>
+                      
+
+                      <!-- <li><a href="#"><i class="fa fa-calendar"></i> Schedule a visit</a></li> -->
+                  </ul>   
+                    <a class='menu-trigger'>
+                        <span>Menu</span>
+                    </a>
+                    <!-- ***** Menu End ***** -->
+                </nav>
+            </div>
+        </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <div class="page-heading header-text">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <!-- <span class="breadcrumb"><a href="#">Home</a>  /  Contact Us</span> -->
+          <h3>Projects</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="featured section">
+    <div class="container">
+      <div class="row">
+
+        <div class=" text-center">
+          <h2>Some of the recent New Vision Projects</h2><br><br>
+        </div>
+      </div>
+
+      
+
+
+<style>
+        /* Existing styles for zoom-container and hover effect */
+        .zoom-container {
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+            /* Ensures no padding/margin issues from Bootstrap classes inside */
+            padding: 0 !important; 
+        }
+
+        .zoom-container .image-wrapper {
+            position: relative;
+        }
+
+        .zoom-container img {
+            width: 100%;
+            height: auto; /* Ensure image scales correctly */
+            transition: transform 0.3s ease, filter 0.3s ease;
+            display: block;
+        }
+
+        .zoom-container:hover img {
+            transform: scale(1.2);
+            filter: brightness(25%);
+        }
+
+        .hover-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            text-align: center;
+            z-index: 2;
+            pointer-events: none; /* Allows clicks to go through to the container */
+        }
+
+        .zoom-container:hover .hover-text {
+            opacity: 1;
+        }
+        
+        /* --- New Lightbox Styles for Popup --- */
+        .lightbox {
+            display: none; /* Hidden by default */
+            position: fixed;
+            z-index: 1000; /* High z-index to be on top of everything */
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.95); /* Nearly black background */
+            /* padding: 40px 0; Removed padding to center lightbox-content */
+        }
+
+        .lightbox-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); /* Centering trick */
+            width: 90%;
+            max-width: 1000px;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 15px;
+            /* Since the page is RTL, place the close button on the left */
+            left: 35px; 
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+            cursor: pointer;
+            z-index: 1001;
+        }
+
+        .close-btn:hover,
+        .close-btn:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        /* Slideshow/Carousel styles within the lightbox */
+        .lightbox-image {
+            display: none;
+            width: 100%;
+            max-height: 85vh; /* Responsive height */
+            object-fit: contain; /* Ensures the image fits without distortion */
+        }
+
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -50px;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            transition: 0.6s ease;
+            user-select: none;
+            -webkit-user-select: none;
+        }
+
+        /* RTL specific positions for arrows */
+        .prev {
+            right: 0; /* 'Previous' button on the right in RTL */
+            border-radius: 3px 0 0 3px;
+        }
+        
+        .next {
+            left: 0; /* 'Next' button on the left in RTL */
+            border-radius: 0 3px 3px 0;
+        }
+
+        .prev:hover, .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+    </style>
+    
+    <div class="container">
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="allProjects" role="tabpanel" aria-labelledby="allProjects-tab">
+                <div class="row">
+                    
+                    <div class="p-0 col-lg-4 zoom-container" data-gallery="g-folding-retract-1">
+                        <div class="image-wrapper">
+                            <div> 
+                                <img class="p-0" src="img/krd-1.jpg" alt="أبواب قابلة للسحب و الرص">
+                                <div class="hover-text">أبواب قابلة للسحب و الرص</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="p-0 col-lg-4 zoom-container" data-gallery="g-folding-2">
+                        <div class="image-wrapper">
+                            <div>
+                                <img class="p-0" src="img/krm-1.jpg" alt="الأبواب القابلة للطي">
+                                <div class="hover-text">الأبواب القابلة للطي</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="p-0 col-lg-4 zoom-container" data-gallery="g-folding-3">
+                        <div class="image-wrapper">
+                            <div>
+                                <img class="p-0" src="img/kr-1.jpg" alt="الأبواب القابلة للطي">
+                                <div class="hover-text">الأبواب القابلة للطي</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="p-0 col-lg-4 zoom-container" data-gallery="g-folding-4">
+                        <div class="image-wrapper">
+                            <div>
+                                <img class="p-0" src="img/jr-1.jpg" alt="الأبواب القابلة للطي">
+                                <div class="hover-text">الأبواب القابلة للطي</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="p-0 col-lg-4 zoom-container" data-gallery="g-roofing-1">
+                        <div class="image-wrapper">
+                            <div>
+                                <img class="p-0" src="img/mrk-1.jpg" alt="أسقف الألمنيوم">
+                                <div class="hover-text">أسقف الألمنيوم</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="p-0 col-lg-4 zoom-container" data-gallery="g-roofing-2">
+                        <div class="image-wrapper">
+                            <div>
+                                <img class="p-0" src="img/dh-2.jpg" alt="أسقف الألمنيوم">
+                                <div class="hover-text">أسقف الألمنيوم</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="p-0 col-lg-4 zoom-container" data-gallery="g-folding-retract-7">
+                        <div class="image-wrapper">
+                            <div> 
+                                <img class="p-0" src="img/hr-1.jpg" alt="أبواب قابلة للسحب و الرص">
+                                <div class="hover-text">أبواب قابلة للسحب و الرص</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="p-0 col-lg-4 zoom-container" data-gallery="g-folding-8">
+                        <div class="image-wrapper">
+                            <div>
+                                <img class="p-0" src="img/ar-1.jpg" alt="الأبواب القابلة للطي">
+                                <div class="hover-text">الأبواب القابلة للطي</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="p-0 col-lg-4 zoom-container" data-gallery="g-folding-9">
+                        <div class="image-wrapper">
+                            <div>
+                                <img class="p-0" src="img/dr-1.jpg" alt="الأبواب القابلة للطي">
+                                <div class="hover-text">الأبواب القابلة للطي</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="p-0 col-lg-4 zoom-container" data-gallery="g-roofing-10">
+                        <div class="image-wrapper">
+                            <div>
+                                <img class="p-0" src="img/agr-2.jpg" alt="أسقف الألمنيوم">
+                                <div class="hover-text">أسقف الألمنيوم</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="p-0 col-lg-4 zoom-container" data-gallery="g-roofing-11">
+                        <div class="image-wrapper">
+                            <div>
+                                <img class="p-0" src="img/asp-1.jpg" alt="أسقف الألمنيوم">
+                                <div class="hover-text">أسقف الألمنيوم</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="p-0 col-lg-4 zoom-container" data-gallery="g-folding-12">
+                        <div class="image-wrapper">
+                            <div>
+                                <img class="p-0" src="img/df-1.jpg" alt="الأبواب القابلة للطي">
+                                <div class="hover-text">الأبواب القابلة للطي</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="projectLightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <div class="lightbox-content">
+            <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+            <a class="next" onclick="changeSlide(1)">&#10095;</a>
+        </div>
+    </div>
+
+    <script>
+        // 💡 1. DEFINE YOUR GALLERIES: Key is the 'data-gallery' value, array contains image paths
+        // NOTE: Please update these image paths and add all your secondary images here!
+        const galleries = {
+            'g-folding-retract-1': [
+                'img/krd-1.jpg', 
+                'img/agr-2.jpg', 
+                'img/dh-1.jpg'
+            ],
+            'g-folding-2': [
+                'img/krm-1.jpg', 
+                'img/krm-2-open.jpg', 
+                'img/krm-3-view.jpg'
+            ],
+            'g-folding-3': [
+                'img/kr-1.jpg', 
+                'img/kr-2-interior.jpg', 
+                'img/kr-3-detail.jpg'
+            ],
+            'g-folding-4': [
+                'img/jr-1.jpg', 
+                'img/jr-2-open.jpg'
+            ],
+            'g-roofing-1': [
+                'img/mrk-1.jpg', 
+                'img/mrk-2-day.jpg', 
+                'img/mrk-3-night.jpg'
+            ],
+            'g-roofing-2': [
+                'img/dh-2.jpg', 
+                'img/dh-3-detail.jpg'
+            ],
+            'g-folding-retract-7': [
+                'img/hr-1.jpg', 
+                'img/hr-2-interior.jpg'
+            ],
+            'g-folding-8': [
+                'img/ar-1.jpg', 
+                'img/ar-2-open.jpg'
+            ],
+            'g-folding-9': [
+                'img/dr-1.jpg', 
+                'img/dr-2-detail.jpg'
+            ],
+            'g-roofing-10': [
+                'img/agr-2.jpg', 
+                'img/agr-3-view.jpg'
+            ],
+            'g-roofing-11': [
+                'img/asp-1.jpg', 
+                'img/asp-2-day.jpg'
+            ],
+            'g-folding-12': [
+                'img/df-1.jpg', 
+                'img/df-2-interior.jpg'
+            ]
+        };
+
+        const lightbox = document.getElementById('projectLightbox');
+        const lightboxContent = lightbox.querySelector('.lightbox-content');
+        let currentSlideIndex = 0;
+        let currentGallery = [];
+
+        // --- Core Functions ---
+
+        function openLightbox(galleryKey) {
+            currentGallery = galleries[galleryKey];
+            if (!currentGallery || currentGallery.length === 0) return;
+
+            // 1. Clear previous images
+            // Select all elements that are NOT the prev/next buttons
+            lightboxContent.querySelectorAll('.lightbox-image').forEach(img => img.remove());
+            
+            // 2. Inject new images
+            currentGallery.forEach((src, index) => {
+                const img = document.createElement('img');
+                img.src = src;
+                img.classList.add('lightbox-image');
+                img.setAttribute('alt', `Gallery image ${index + 1}`);
+                // Insert new image before the previous button
+                lightboxContent.insertBefore(img, lightboxContent.querySelector('.prev')); 
+            });
+
+            // 3. Show lightbox and initial slide
+            lightbox.style.display = 'block';
+            currentSlideIndex = 0;
+            showSlide(currentSlideIndex);
+        }
+
+        function closeLightbox() {
+            lightbox.style.display = 'none';
+        }
+
+        function showSlide(n) {
+            const slides = lightboxContent.querySelectorAll('.lightbox-image');
+            if (slides.length === 0) return;
+
+            // Loop logic (go to first slide from last, and vice-versa)
+            if (n >= slides.length) { currentSlideIndex = 0; }
+            if (n < 0) { currentSlideIndex = slides.length - 1; }
+
+            // Hide all, show current
+            slides.forEach(slide => { slide.style.display = 'none'; });
+            slides[currentSlideIndex].style.display = 'block';
+        }
+
+        // Global function for the next/prev buttons' onclick
+        window.changeSlide = function(n) {
+            currentSlideIndex += n;
+            showSlide(currentSlideIndex);
+        }
+
+
+        // --- Event Listeners ---
+
+        // 1. Click on main gallery images
+        document.querySelectorAll('.zoom-container').forEach(container => {
+            container.addEventListener('click', function() {
+                const galleryKey = this.getAttribute('data-gallery');
+                openLightbox(galleryKey);
+            });
+        });
+
+        // 2. Close button (X sign)
+        document.querySelector('.close-btn').onclick = closeLightbox;
+
+        // 3. Click outside image to close
+        lightbox.addEventListener('click', function(e) {
+            // Only close if the click target is the lightbox itself or the close button
+            if (e.target === this || e.target === document.querySelector('.close-btn')) {
+                closeLightbox();
+            }
+        });
+
+        // 4. ESC key to close
+        document.addEventListener('keydown', function(e) {
+            if (e.key === "Escape" && lightbox.style.display === 'block') {
+                closeLightbox();
+            }
+        });
+    </script>
+
+
+    
+      <div class="mt-5 text-center">
+        <a class="mt-5" href="contact.html">Request For Inspection</a>
+      </div>
+
+    </div>
+  </div>
+
+<footer>
+  <div class="container">
+    <div class="row align-items-center justify-content-between">
+      <div class="col-md-6">
+        <p class="mb-0">© Copyright 2025 - Creativealu</p>
+      </div>
+      <div class="col-md-6 text-end">
+        <img src="img/logo.png" alt="Logo" style="height: 75%; width: 75%;">
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/js/isotope.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/counter.js"></script>
+  <script src="assets/js/custom.js"></script>
+
+  </body>
+</html>
